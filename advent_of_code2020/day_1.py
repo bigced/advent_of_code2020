@@ -5,9 +5,7 @@ def get_two_entries_that_sums_2020(data):
     for i in range(len(data)):
         for j in range(1, len(data)):
             if data[i] + data[j] == 2020:
-                results = [data[i], data[j]]
-                results.sort()
-                return tuple(results)
+                return data[i], data[j]
 
 
 def get_three_entries_that_sums_2020(data):
@@ -15,9 +13,7 @@ def get_three_entries_that_sums_2020(data):
         for j in range(1, len(data)):
             for k in range(2, len(data)):
                 if data[i] + data[j] + data[k] == 2020:
-                    results = [data[i], data[j], data[k]]
-                    results.sort()
-                    return tuple(results)
+                    return data[i], data[j], data[k]
 
 
 def multiply_element(entries):
